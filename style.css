@@ -8,6 +8,10 @@
     flex-wrap: wrap;
 }
 
+strong {
+    color: #f60;
+}
+
 header {
     width: 100%;
     background: #3c3c3c;
@@ -60,8 +64,12 @@ section h2 {
     font-size: 16px;
 }
 
-.personal {
+section > .detail {
+    margin-top: 14px;
+}
 
+.personal .item .degree {
+    font-weight: bold;
 }
 
 .personal .item span:first-child {
@@ -121,6 +129,10 @@ section h2 {
     margin-left: -5px;
 }
 
+aside > section:last-child {
+    border-bottom: none;
+}
+
 .blog {
     display: flex;
     flex-wrap: wrap;
@@ -137,10 +149,101 @@ section h2 {
 }
 
 main {
-    background: orange;
-    width: 100px;
+    /*width: 100px;*/
     flex: 1;
     min-height: calc(100vh - 110px);
+}
+
+main > section {
+    margin: 0 10px 0 20px;
+}
+
+.aboutSkills li {
+    margin-left: 15px;
+}
+
+.education > .university {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.education > .university h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.education > .university span {
+    color: #aaa;
+    padding-right: 2px;
+}
+
+.education > .profession {
+    padding-top: 2px;
+}
+
+.project .head {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.project .head h3 {
+    color: #000;
+}
+
+.project .head .projectLink {
+    padding-right: 2px;
+    color: #999;
+    font-size: 15px;
+}
+
+.project .head .projectLink a {
+    border-bottom: 1px solid #999;
+}
+
+.project .record {
+    margin-top: 8px;
+}
+
+.project .markdown {
+    color: #f60;
+}
+
+.project .record a {
+    color: dodgerblue;
+}
+
+.accounting .img {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.accounting .img > img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.openSource > p {
+    margin-bottom: 14px;
+}
+
+.job > .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job .head time {
+    color: #999;
+}
+
+.job .jobDescription {
+    list-style: none;
+    padding-top: 12px;
 }
 
 @media (max-width: 768px) {
@@ -151,5 +254,9 @@ main {
 
     aside {
         width: 100%;
+    }
+
+    aside > section:last-child {
+        border-bottom: 2px solid #ccc;
     }
 }
