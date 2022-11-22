@@ -16,7 +16,7 @@ header {
     width: 100%;
     background: #3c3c3c;
     text-align: center;
-    padding: 40px 0 10px 0;
+    padding: 30px 0 10px 0;
     color: #fff;
 }
 
@@ -186,7 +186,7 @@ main > section {
 .project .head {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
 }
 
 .project .head h3 {
@@ -246,6 +246,10 @@ main > section {
     padding-top: 12px;
 }
 
+main section:last-child {
+    border-bottom: none;
+}
+
 @media (max-width: 768px) {
     header {
         padding-top: 20px;
@@ -254,9 +258,21 @@ main > section {
 
     aside {
         width: 100%;
+        border-right: none;
     }
 
     aside > section:last-child {
         border-bottom: 2px solid #ccc;
     }
+}
+
+@media print {
+    body {
+        margin: 0;
+    }
+    /*横向打印时保留下面样式，纵向打印取消下面样式*/
+    /*.breakPage{*/
+    /*    page-break-before: always;*/
+    /*    margin-top: -104px;*/
+    /*}*/
 }
