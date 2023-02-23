@@ -16,12 +16,13 @@ header {
     width: 100%;
     background: #3c3c3c;
     text-align: center;
-    padding: 30px 0 10px 0;
+    padding: 10px 0 10px 0;
     color: #fff;
 }
 
 header > h1 {
     font-size: 32px;
+    margin-bottom: 6px;
 }
 
 header > p {
@@ -61,7 +62,8 @@ section {
 
 section h2 {
     color: #5c99ca;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 section > .detail {
@@ -74,12 +76,13 @@ section > .detail {
 
 .personal .item span:first-child {
     display: inline-block;
-    width: 80px;
+    width: 40px;
+    margin-right: -8px;
 }
 
 .personal .item span:nth-child(2)::before {
     content: ':';
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .contact .item a {
@@ -119,13 +122,14 @@ section > .detail {
 
 .link .item a {
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 
 .link svg {
     width: 25px;
     height: 25px;
-    margin-right: 10px;
+    margin-right: 2px;
     margin-left: -5px;
 }
 
@@ -191,6 +195,8 @@ main > section {
 
 .project .head h3 {
     color: #000;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .project .head .projectLink {
@@ -253,9 +259,31 @@ main section:last-child {
 @media (max-width: 768px) {
     header {
         padding-top: 20px;
-        height: 160px;
+        height: 110px;
+        margin-bottom: 40px;
     }
 
+    .personal {
+        display: flex;
+        justify-content: start;
+
+    }
+
+    .personal > .item {
+        margin-right: 24px;
+    }
+
+    .link {
+        display: flex;
+        justify-content: start;
+    }
+
+    .link .item {
+        margin-left: 20px;
+    }
+    .link .item:nth-child(1) {
+        margin-left: 0;
+    }
     aside {
         width: 100%;
         border-right: none;
@@ -267,9 +295,9 @@ main section:last-child {
 }
 
 @media print {
-    body {
-        margin: 0;
-    }
+    /*body {*/
+    /*    margin: 0;*/
+    /*}*/
     /*横向打印时保留下面样式，纵向打印取消下面样式*/
     /*.breakPage{*/
     /*    page-break-before: always;*/
