@@ -26,10 +26,6 @@
           <span class="degree">本科</span>
         </div>
         <div class="item">
-          <span>年龄</span>
-          <span>27岁</span>
-        </div>
-        <div class="item">
           <span>性别</span>
           <span>男</span>
         </div>
@@ -82,15 +78,15 @@
       <h2>掌握技能</h2>
       <div class="detail aboutSkills">
         <ul>
-          <li>熟悉页面制作技巧，能将设计稿完美还原</li>
-          <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-          <li>熟练掌握 <strong>Vue全家桶 </strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
-          <li>了解 React 的使用，包括 create-react-app、React Hooks</li>
-          <li>熟悉 <strong>ES6+</strong>，包括 let / Promise / await / 析构赋值等</li>
-          <li>熟悉 <strong>Element UI </strong>的使用，项目中频繁用到其组件</li>
-          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
-
-          <li>了解 <strong>Webpack、vite 的配置和优化</strong></li>
+          <li>扎实的HTML、CSS和JS基础，熟悉<strong>响应式设计</strong>，能够使用媒体查询和流式布局来创建移动友好的网站</li>
+          <li>熟悉 <strong>Element UI </strong>的使用，能够使用它来快速构建响应式网站，项目中频繁用到其组件</li>
+          <li>熟悉前端工具如<strong>Git</strong>，能够使用它来管理代码库和版本控制</li>
+          <li>熟悉<strong>axios前后端分离</strong>技术，能够使用它来实现前后端数据交互</li>
+          <li>熟练掌握 <strong>Vue2 全家桶 </strong>来构建和维护复杂的单页应用，并使用<strong> Vue3 </strong>来构建更快、更灵活的应用</li>
+          <li>了解<strong> React </strong>的使用，能够使用 Node.js 和 React Hooks 来构建更可维护的代码，以提高开发效率</li>
+          <li>熟悉 <strong>ES6+</strong>，包括 let / Promise / await / 析构赋值等；了解 <strong>TypeScript</strong> 的使用，我的项目就有用 TS 实现的</li>
+          <li>能熟练使用<strong> Echarts </strong>来构建可视化图表，具备扎实的移动端<strong> SPA </strong>应用开发和<strong>组件库封装</strong>技术，能够为网站提供高质量的视觉和交互体验</li>
+          <li>熟悉前端构建工具，了解 <strong>Webpack、vite </strong>的配置和优化</li>
         </ul>
       </div>
     </section>
@@ -105,70 +101,78 @@
           </div>
         </div>
         <p>
-          模拟日常学习笔记的需求，开发的一款简洁好用、可<strong>后台交互、前后端分离</strong>的 PC 端笔记项目。
+          <b>项目背景：</b>模拟日常学习笔记的需求，旨在提供一个便捷的在线笔记服务，用户可以在线创建、编辑、保存和分享笔记，并且可以在任何 pc 设备上访问和编辑笔记。
         </p>
-        <p>主要技术栈：<strong>less</strong> /
-          <strong>Vue2</strong> / <strong>Vue-Router</strong> /
-          <strong>Vue-Cli</strong> /
-          <strong>Vuex</strong> / <strong>Element-UI</strong> /
-          <strong>ES6</strong> / <strong>node.js</strong> / <strong>Axios</strong> /
-          <strong>webpack</strong>
+        <p class="record">
+          <b>技术选型：</b>使用<strong> less</strong>、
+          <strong>Vue2</strong>、<strong>Vue-Router</strong>、
+          <strong>Vue-Cli</strong>、
+          <strong>Vuex</strong>、<strong>Element-UI</strong>、
+          <strong>ES6</strong>、<strong>node.js</strong>、<strong>Axios</strong>、
+          <strong>webpack </strong>等技术来构建前端界面，实现路由和脚手架、管理状态、构建UI组件、编写JavaScript代码、构建后端服务、实现前后端数据交互以及构建和打包项目。
         </p>
-        <p>从产品需求入手，功能涵盖 注册登录、登录跳转、展示头像&笔记详情、笔记本切换、垃圾站回收等。
+        <p class="record">
+          <b>技术难点：</b>比如如何实现前后端数据交互，如何确定当前点击的是哪条笔记等。为了解决这些问题，我对axios二次封装来实现自动切换开发、生产环境与后台交互；并设计出借助路由守卫从 $rotue.query.noteId 获取当前 noteId，通过组件通信确定处于哪一个笔记本的方案。
         </p>
-        <p class="record">为提升代码复用率，项目中为许多功能函数做了抽象封装；为优化对图片的加载性能，使用了懒加载；为<strong>优化用户的体验</strong>，切换注册/登录时添加了缓和的动画效果，笔记的内容也支持<span class="markdown"> markdown 语法</span> ，笔记(本)为空时引导用户操作等，后续还会添加更多优化。
+        <p class="record">
+          <b>项目亮点：</b>为提升代码复用率，项目中为许多功能函数做了抽象封装；为优化对图片的加载性能，使用了懒加载，把单页面应用的js根据路由来打包；为<strong>优化用户的体验</strong>，切换注册/登录时添加了缓和的动画效果，笔记的内容也支持<span class="markdown"> markdown 语法</span> ，笔记(本)为空时引导用户操作等，后续还会添加更多优化。
         </p>
-        <div class="record">
-          <p>我把在接口封装中使用 Promise 封装 axios 的经验总结成了一篇博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/gylkyy921idu5ew8" target="_blank">《前后端分离项目中如何封装 axios》</a>。同样，也把完整的开发过程、bug 处理总结成了一组博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/ft55dpxaguc6swca" target="_blank">《云笔记开发思路》</a>。
-          </p>
-        </div>
+        <p class="record">
+          <b>项目收获：</b>最终，我成功地完成了该项目，并更加深入地了解了前端技术。我把在接口封装中使用 Promise 封装 axios 的经验总结成了一篇博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/gylkyy921idu5ew8" target="_blank">《前后端分离项目中如何封装 axios》</a>。同样，也把完整的开发过程、bug 处理总结成了一组博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/ft55dpxaguc6swca" target="_blank">《云笔记开发思路》</a>。
+        </p>
       </div>
       <div class="detail project ui">
-        <div class="head">
-          <h3>咕咕-UI</h3>
+        <div class="head breakPage">
+          <h3>咕咕 UI 组件库</h3>
           <div class="projectLink">
             <a href="https://github.com/qingyou2517/gugu-ui" target="_blank">源码链接</a>
             <a href="https://qilling.gitee.io/gugu-ui-website-1/#/" target="_blank">项目预览</a>
           </div>
         </div>
         <p>
-          开发的一款基于 <strong>Vue3</strong> / <strong>TypeScript</strong> / <strong>vite</strong> 的 UI 框架。
+          <b>项目背景：</b>
+          为了更深刻地理解 UI 组件的原理，同时便于我们维护自己的代码，保证规范性和唯一性。我模仿 Element UI和Ant design 的部分组件，开发了一款基于 <strong>Vue3</strong>、<strong>TypeScript</strong>、<strong>vite</strong>、<strong>rollup</strong> 构建的 UI 框架。
         </p>
-        <p>
-          参考了 Element-UI、Ant Design 等优秀的 UI 框架，主要组件有 Switch开关、按钮、弹出框、tab切换栏等，用户可按需引入，更多组件还在开发中。
+        <p class="record">
+          <b>技术选型：</b>使用Vue3来构建可重用的 UI 组件，使用vite来构建和管理前端应用，使用TypeScript来构建更可维护的代码，以提高开发效率。
+
         </p>
-        <div class="record">
-          <p>本项目采用<strong> Scss </strong>编写默认样式，最后使用<strong> npm </strong>发布组件，vite 搭建官网。
-          </p>
-        </div>
-        <div class="record">
-          <p>开发过程让我对 Vue3 和 TypeScript 有了新的认识，
-            并总结成了一篇博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/uh0lgdzqytk80e64" target="_blank">《我理解的TS 泛型》</a>。
-          </p>
-          <p>并详细记录了项目的开发思路、bug & 处理方法，具体详见这组博客：<a href="https://www.yuque.com/qingyou-tkchw/lp26se/kgpgchlbmi8pd5d4" target="_blank">《Vue3 造轮子项目开发思路》</a>。
-          </p>
-        </div>
+        <p class="record">
+          本项目采用<strong> Scss </strong>编写默认样式，最后使用<strong> npm </strong>发布组件，vite 搭建官网。
+        </p>
+        <p class="record">
+          <b>技术难点：</b>在于使用Vue3来构建可重用的UI组件，因为它需要熟悉Vue3的基本概念，并能够熟练使用Vue3的组件、指令、过滤器等功能。
+        </p>
+        <p class="record">
+          <b>项目收获：</b>已发布到 npm，主要组件有 Switch开关、按钮、弹出框、tab切换栏，用户可按需引入，已被我用在自己的项目中，更多组件还在开发中。开发过程让我对 Vue3 和 TypeScript 有了新的认识，
+          并总结成了一篇博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/uh0lgdzqytk80e64" target="_blank">《我理解的TS 泛型》</a>。同时，我详细记录了项目的开发思路、bug & 处理方法，具体详见这组博客：<a href="https://www.yuque.com/qingyou-tkchw/lp26se/kgpgchlbmi8pd5d4" target="_blank">《Vue3 造轮子项目开发思路》</a>。
+        </p>
       </div>
       <div class="detail project accounting">
-        <div class="head breakPage">
+        <div class="head ">
           <h3>布谷鸟记账</h3>
           <div class="projectLink">
             <a href="https://github.com/qingyou2517/Morney" target="_blank">源码链接</a>
           </div>
         </div>
         <p>
-          一款基于 <strong>Vue2</strong> / <strong>TypeScript</strong> 的<strong> 移动端单页面应用</strong>。
-        </p>
-        <p>这是我从自己的需求出发，设计出的极简记账应用，而且可以快速记账并通过图表查看消费习惯。您可以<B> 手机扫描二维码 </B>体验该APP：
+          <b>项目背景：</b>这是我从自己的需求出发，设计出的一款极简记账应用，可以快速记账并通过图表查看消费习惯。您可以<B> 手机扫描二维码 </B>体验该移动端APP：
         </p>
         <div class="img">
           <img src="/记账app手机二维码.dc4f565a.png" alt="二维码">
         </div>
         <div class="record">
-          <p>本项目采用<strong> Scss </strong>编写默认样式，使用<strong> localStorage </strong>存储数据，<strong>Echarts </strong>展示消费习惯，使用<strong> day.js </strong>处理日期和时间，并引用了<strong> Element UI </strong>优化组件样式。
+          <p>
+            <b>技术选型：</b>本项目采用<strong> Vue2</strong> 、<strong>TypeScript</strong> 构建，使用<strong> Scss </strong>编写默认样式，使用<strong> localStorage </strong>存储数据，<strong>Echarts </strong>展示消费习惯，使用<strong> day.js </strong>处理日期和时间，并引用了<strong> Element UI </strong>优化组件样式。
         </p></div>
         <div class="record">
-          <p>关于开发的经验思路、bug、难点以及后续更新计划，我都总结成了一组博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/ci1egky602xuscdt" target="_blank">《布谷鸟记账项目开发思路》</a>。
+          <p>
+            <b>技术难点：</b>主要在于移动端页面的布局和适配，以及 echarts 图表的引入。比如手机端虚拟键盘顶起页面，手机浏览器地址栏遮挡页面等，最终我积极查阅多方资料，不断调试，让项目实现正常需求。
+          </p>
+        </div>
+        <div class="record">
+          <p>
+            <b>项目收获：</b>关于开发的经验思路、bug、难点以及后续更新计划，我都总结成了一组博客<a href="https://www.yuque.com/qingyou-tkchw/lp26se/ci1egky602xuscdt" target="_blank">《布谷鸟记账项目开发思路》</a>。
           </p>
         </div>
       </div>
@@ -246,7 +250,7 @@
       <h2>关于我</h2>
       <div class="detail introduction">
         <p>2018年本科毕业，本专业工作了一年，随后加入了三年计算机考研大军，于去年放弃了本校调剂。</p>
-        <p>因为喜欢前端可以实现优雅、充满高级感的交互页面，也有意愿往可视化、webGL方向发展，所以认真学习了半年的前端知识，认真准备了四个项目，细心总结了90余篇博客，希望能脚踏实地地入前端领域，深耕计算机技术。</p>
+        <p>喜欢前端可以实现优雅、充满高级感的交互页面，也有意愿往可视化、webGL方向发展。学习和完成项目之余，在语雀上细心总结了90余篇博客。</p>
       </div>
     </section>
 
@@ -255,7 +259,7 @@
       <div class="detail job">
         <div class="head">
           <h3> 华通电脑有限公司 </h3>
-          <h4>电子PE工程师</h4>
+          <h4>电子工程师</h4>
           <span><time>2018-7</time> ~ <time>2019-5</time></span>
         </div>
         <ul class="jobDescription">
